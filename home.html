@@ -3,39 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/home.css">
-    <title>Sorriso Prime - Clínica Odontologica</title>
+    <title>Sorriso Prime - Clínica Odontológica</title>
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <div>
-            <a href="home.html">
-                <img src="img/logo.png" alt="Logo">
-            </a>
-            <p>Sorriso Prime</p>
+        <div class="h-esq">
+            <p>
+                <img src="img/logo.png" alt="Logo" class="logo"> Sorriso Prime
+            </p>
         </div>
 
-        <!-- NAVEGAÇÃO -->
-        <nav>
+        <span class="material-symbols-outlined" id="btn-menu">
+            menu
+        </span>
+
+        <nav class="h-cent" id="nav-menu">
             <p>
                 <a href="home.html">Ínicio</a>
                 <a href="">Convênios</a>
                 <a href="">Depoimentos</a>
                 <a href="">Dúvidas Frequentes</a>
+
+                <a href="" class="btn-whatsapp">WHATSAPP</a>
             </p>
         </nav>
 
-        <!-- BOTÃO -->
-        <div>
+        <div class="h-dir">
             <a href="">WHATSAPP</a>
         </div>
     </header>
 
     <!-- HERO -->
     <section>
-        <div>
+        <div class="hero">
             <p>Cuidando do seu sorriso</p>
             <h1>Atendimento odontológico completo para toda a família</h1>
             <a href="">Agendar atendimento</a>
@@ -244,6 +248,20 @@
             <iframe src="https://maps.google.com" frameborder="0"></iframe>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btnMenu = document.getElementById('btn-menu');
+            const navMenu = document.getElementById('nav-menu');
+
+            if (btnMenu && navMenu) {
+                btnMenu.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                });
+            } else {
+                console.error("Elemento #btn-menu ou #nav-menu não encontrado no HTML.");
+            }
+        });
+    </script>
 </body>
 <footer>
     <p>Site feito por <a href="https://instagram.com/misaelcunha.dev" target="_blank">Misael Cunha</a></p>
