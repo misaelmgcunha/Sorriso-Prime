@@ -24,6 +24,11 @@
     transition: 0.2s linear;
 }
 
+.destaque {
+    font-weight: bold;
+    color: var(--cor4);
+}
+
 .secao {
     max-width: 1200px;
     margin: 0 auto;
@@ -168,7 +173,7 @@ nav.h-cent .btn-whatsapp {
 /* SEÇÃO 2 - HERO DA PÁGINA */
 
 .banner {
-    background-image: url('../img/banner-home.png');
+    background-image: url('../img/home/banner-home.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain 10px;
@@ -236,10 +241,12 @@ nav.h-cent .btn-whatsapp {
 }
 
 .somos-nos > .sn-grupo-1 > iframe {
+    display: block;
     max-width: 500px;
     max-height: 500px;
     margin-left: 50px;
     margin-right: 10px;
+    margin-top: 30px;
 }
 
 @media (max-width: 768px) {
@@ -270,11 +277,14 @@ nav.h-cent .btn-whatsapp {
     background-color: #ffffff;
 
     text-align: center;
+    border-radius: 20px;
 }
 
 .somos-nos > .sn-grupo-2 > .sn-box > img {
     width: 100%;
     height: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .somos-nos > .sn-grupo-2 > .sn-box > h3 {
@@ -291,4 +301,275 @@ nav.h-cent .btn-whatsapp {
     .somos-nos > .sn-grupo-2 {
         flex-direction: column;
     }
+}
+
+/* SEÇÃO 4 - NOSSOS SERVIÇOS DA PÁGINA */
+.nossos-servicos {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+
+    border-bottom: 2px solid var(--cor9);
+}
+
+.nossos-servicos > h2 {
+    font-size: 2em;
+    color: var(--cor1);
+
+    margin-bottom: 30px;
+}
+
+.nossos-servicos  .ns-boxers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nossos-servicos > .ns-boxers > .ns-box {
+    flex-shrink: 0;
+    border: 3px solid var(--cor1);
+    border-radius: 23px;
+    width: 300px;
+    height: 350px;
+
+    text-align: center;
+}
+
+.nossos-servicos > .ns-boxers > .ns-box > img {
+    width: 100%;
+    height: 55%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.nossos-servicos > .ns-boxers > .ns-box > h3 {
+    font-size: 1.7em;
+    color: var(--cor1);
+}
+
+.nossos-servicos > .ns-boxers > .ns-box > p {
+    font-size: 1.1em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nossos-servicos > .ns-boxers > .ns-box > a {
+    background-color: var(--cor1);
+    color: #ffffff;
+    font-weight: bold;
+
+    display: inline-block;
+    border-radius: 5px;
+
+    padding: 10px 30%;
+    margin-top: 10px;
+}
+
+.nossos-servicos > .ns-boxers > .ns-box > a:hover {
+    background-color: var(--cor5);
+}
+
+/* SEÇÃO 5 - NOSSOS ESPECIALISTAS DA PÁGINA */
+.nossos-especialistas {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+
+    border-bottom: 2px solid var(--cor9);
+    background-color: #e7e7e7;
+}
+
+.nossos-especialistas > .ne-info > h2 {
+    font-size: 2em;
+    color: var(--cor1);
+
+    margin-bottom: 10px;
+}
+
+.nossos-especialistas > .ne-info > p {
+    font-size: 1.2em;
+}
+
+.nossos-especialistas > .ne-info > a {
+    background-color: var(--cor1);
+    color: #ffffff;
+    font-weight: bold;
+
+    display: inline-block;
+    border-radius: 5px;
+
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.nossos-especialistas > .ne-info > a:hover {
+    background-color: var(--cor5);
+}
+
+.nossos-especialistas > .ne-info > .ne-boxers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nossos-especialistas > .ne-info > .ne-boxers > .ne-box {
+    flex-shrink: 0;
+    border: 3px solid var(--cor1);
+    width: 200px;
+    height: 430px;
+
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.nossos-especialistas > .ne-info > .ne-boxers > .ne-box > .textura-ne {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 0;
+
+    border-bottom: 3px solid var(--cor1);
+}
+
+.nossos-especialistas > .ne-info > .ne-boxers > .ne-box > .img-prof-ne {
+    margin-top: 0;
+    width: 100%;
+    height: 70%;
+}
+
+.nossos-especialistas > .ne-info > .ne-boxers > .ne-box > h3 {
+    color: var(--cor1);
+    font-size: 1.3em;
+}
+
+.nossos-especialistas > .ne-info > .ne-boxers > .ne-box > p {
+    font-size: 1.2em;
+}
+
+/* SEÇÃO 6 - AVALIAÇÕES DOS USUÁRIOS DA PÁGINA */
+.avaliacoes {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+
+    border-bottom: 2px solid var(--cor9);
+}
+
+.avaliacoes > .ava-info > h2 {
+    font-size: 2em;
+    color: var(--cor1);
+
+    margin-bottom: 10px;
+}
+
+.avaliacoes > .ava-info > p {
+    font-size: 1.2em;
+}
+
+.avaliacoes > .ava-info > img {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.avaliacoes > .ava-info > .ava-boxers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.avaliacoes > .ava-info > .ava-boxers .ava-box {
+    flex-shrink: 0;
+    border: 3px solid var(--cor1);
+    max-width: 300px;
+    height: 180px;
+    position: relative;
+    background-color: #ffffff;
+
+}
+
+.avaliacoes > .ava-info > .ava-boxers .ava-box > .ava-nick {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avaliacoes > .ava-info > .ava-boxers .ava-box > .ava-nick > .ava-user {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.avaliacoes > .ava-info > .ava-boxers .ava-box > .ava-nick > .ava-stars {
+    width: 120px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.avaliacoes > .ava-info > .ava-boxers .ava-box > .ava-feedback {
+    text-align: left;
+    margin: 10px;
+
+    font-size: 1.2em;
+    width: 90%;
+}
+
+/* SEÇÃO 7 - CONTATO DA PÁGINA */
+.contato {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+
+    border-bottom: 2px solid var(--cor9);
+    background-color: #e7e7e7;
+
+    text-align: center;
+}
+
+.contato > .cont-info > h2 {
+    font-size: 2em;
+    color: var(--cor1);
+
+    margin-bottom: 10px;
+}
+
+.contato > .cont-info > p {
+    font-size: 1.2em;
+}
+
+.contato > .cont-info > .link {
+    background-color: var(--cor1);
+    color: #ffffff;
+    font-weight: bold;
+
+    display: inline-block;
+    border-radius: 5px;
+
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contato > .cont-info > .link:hover {
+    background-color: var(--cor5);
+}
+
+.contato > .cont-info > .redes-sociais > .rede-social {
+    width: 40px;
+    margin: 0 10px;
+    cursor: pointer;
 }
