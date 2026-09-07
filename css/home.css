@@ -573,3 +573,56 @@ nav.h-cent .btn-whatsapp {
     margin: 0 10px;
     cursor: pointer;
 }
+
+.contato > .cont-info > .cont-boxers {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contato > .cont-info > .cont-boxers > .cont-box {
+    width: 300px;
+    height: 185px;
+    border: 2px solid var(--cor1);
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+.contato > .cont-info > .cont-boxers > .cont-box > img {
+    width: 100%;
+    height: 100px;
+}
+
+.contato > .cont-info > .cont-boxers > .cont-box > p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.contato > .cont-info > iframe {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* FOOTER DA PÁGINA */
+footer {
+    padding: 3px 0;
+    color: #ffffff;
+    background-color: var(--cor5);
+
+    text-align: center;
+}
+
+footer > p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+footer > p a:hover {
+    text-decoration: underline;
+}
