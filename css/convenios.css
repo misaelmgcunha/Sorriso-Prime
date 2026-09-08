@@ -1,0 +1,277 @@
+/* CONFIGURAÇÕES GERAIS */
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --fonte: 'Roboto';
+
+    --cor1: #2596BE;
+    --cor2: #24BF94;
+    --cor3: #BF9724;
+    --cor4: #BF7424;
+    --cor5: #385D6A;
+
+    --cor9: #757575;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+.secao {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Sombra única para todo o bloco */
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/* SEÇÃO 1 - HEADER DA PÁGINA */
+header {
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+header > .h-esq {
+    margin-left: 25px;
+}
+
+header > .h-esq > p {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+
+    color: var(--cor1);
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+header > .h-esq > p > img {
+    max-width: 70px;
+}
+
+
+header > .h-cent > p > a {
+    margin: 0 5px 0 5px;
+    color: var(--cor1);
+}
+
+header > .h-cent > p > a:hover {
+    font-weight: bold;
+    color: var(--cor2);
+    border-bottom: 3px solid var(--cor2);
+}
+
+header > .h-dir {
+    margin-right: 25px;
+}
+
+header > .h-dir > a {
+    border-radius: 5px;
+    padding: 10px;
+
+    background-color: var(--cor1);
+    color: #ffffff;
+    font-weight: bold;
+} 
+
+header > .h-dir > a:hover {
+    background-color: var(--cor5);
+}
+
+/* Esconde o ícone de hambúrguer por padrão em telas grandes */
+#btn-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--cor1);
+    margin-right: 25px;
+}
+
+nav.h-cent .btn-whatsapp {
+    display: none;
+}
+
+/* SEÇÃO 2 - HERO DA PÁGINA */
+
+.banner {
+    background-image: url('../img/convenios/Banner.png');
+    background-position: bottom right -350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30vh;
+
+    padding-top: 7%;
+    padding-left: 5%;
+}
+
+.banner > .hero > p {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--cor5);
+}
+
+.banner > .hero > h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    font-size: 2.2em;
+    color: var(--cor1);
+}
+
+.banner > .hero > a {
+    border-radius: 5px;
+    padding: 10px;
+
+    background-color: var(--cor1);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.banner > .hero > a:hover {
+    background-color: var(--cor5);
+}
+
+/* SEÇÃO 3 - LISTA DA PÁGINA */
+.convenios {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--cor9);
+}
+
+.convenios > h2 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--cor1);
+}
+
+.convenios > p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.convenios > p > a {
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px;
+
+    background-color: var(--cor1);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.convenios > .lista-conv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.convenios > .lista-conv > img {
+    max-width: 200px;
+}
+
+/* FOOTER DA PÁGINA */
+footer {
+    padding: 3px 0;
+    color: #ffffff;
+    background-color: var(--cor1);
+
+    text-align: center;
+}
+
+footer > p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+footer > p a:hover {
+    text-decoration: underline;
+}
+
+/* ==================================================================================== */
+/* Configuração para Dispositivos Movéis */
+/* ==================================================================================== */
+@media (max-width: 768px) {
+    /* SEÇÃO 1 - HEADER DA PÁGINA */
+    #btn-menu {
+        display: block; /* Exibe o botão do menu */
+    }
+
+    header > .h-dir {
+        display: none; /* Oculta o botão do WhatsApp do topo para economizar espaço */
+    }
+
+    /* Esconde o menu original e ajusta para exibição vertical */
+    header > .h-cent {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    header > .h-cent.active {
+        display: block; /* Mostra o menu quando ativo via JS */
+    }
+
+    header > .h-cent > p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header > .h-cent > p > a {
+        font-size: 1.1em;
+        border-bottom: 1px solid var(--cor1);
+    }
+
+    nav.h-cent .btn-whatsapp {
+        text-align: center;
+        display: inline-block;
+        background-color: var(--cor1);
+        color: #ffffff !important;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 250px;
+        padding: 10px 0;
+        margin-top: 5px;
+    }
+
+    nav.h-cent .btn-whatsapp:hover {
+        background-color: var(--cor5);
+    }
+
+    /* SEÇÃO 2 - HERO DA PÁGINA */
+    .banner {
+        height: 40vh;
+    }
+    
+}
