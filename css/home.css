@@ -24,11 +24,6 @@
     transition: 0.2s linear;
 }
 
-.destaque {
-    font-weight: bold;
-    color: var(--cor4);
-}
-
 .secao {
     max-width: 1200px;
     margin: 0 auto;
@@ -112,64 +107,6 @@ nav.h-cent .btn-whatsapp {
     display: none;
 }
 
-/* REGRAS DE ADAPTAÇÃO MOBILE */
-@media (max-width: 768px) {
-    #btn-menu {
-        display: block; /* Exibe o botão do menu */
-    }
-
-    header > .h-dir {
-        display: none; /* Oculta o botão do WhatsApp do topo para economizar espaço */
-    }
-
-    /* Esconde o menu original e ajusta para exibição vertical */
-    header > .h-cent {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #ffffff;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px 0;
-        z-index: 1000;
-    }
-
-    header > .h-cent.active {
-        display: block; /* Mostra o menu quando ativo via JS */
-    }
-
-    header > .h-cent > p {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    header > .h-cent > p > a {
-        font-size: 1.1em;
-        border-bottom: 1px solid var(--cor1);
-    }
-
-    nav.h-cent .btn-whatsapp {
-        text-align: center;
-        display: inline-block;
-        background-color: var(--cor1);
-        color: #ffffff !important;
-        font-weight: bold;
-        border-radius: 5px;
-        width: 80%;
-        max-width: 250px;
-        padding: 10px 0;
-        margin-top: 5px;
-    }
-
-    nav.h-cent .btn-whatsapp:hover {
-        background-color: var(--cor5);
-    }
-
-}
-
 /* SEÇÃO 2 - HERO DA PÁGINA */
 
 .banner {
@@ -249,17 +186,6 @@ nav.h-cent .btn-whatsapp {
     margin-top: 30px;
 }
 
-@media (max-width: 768px) {
-    .somos-nos > .sn-grupo-1 {
-        flex-direction: column;
-    }
-
-    .somos-nos > .sn-grupo-1 > iframe {
-        margin: 0 auto;
-        margin-top: 20px;
-    }
-}
-
 .somos-nos > .sn-grupo-2 {
     margin-top: 20px;
 
@@ -295,12 +221,6 @@ nav.h-cent .btn-whatsapp {
 .somos-nos > .sn-grupo-2 > .sn-box > p {
     font-size: 1.1em;
     margin-top: 5px;
-}
-
-@media (max-width: 768px) {
-    .somos-nos > .sn-grupo-2 {
-        flex-direction: column;
-    }
 }
 
 /* SEÇÃO 4 - NOSSOS SERVIÇOS DA PÁGINA */
@@ -625,4 +545,112 @@ footer > p a {
 
 footer > p a:hover {
     text-decoration: underline;
+}
+
+/* ==================================================================================== */
+/* Configuração para Dispositivos Movéis */
+/* ==================================================================================== */
+@media (max-width: 768px) {
+    /* SEÇÃO 1 - HEADER DA PÁGINA */
+    #btn-menu {
+        display: block; /* Exibe o botão do menu */
+    }
+
+    header > .h-dir {
+        display: none; /* Oculta o botão do WhatsApp do topo para economizar espaço */
+    }
+
+    /* Esconde o menu original e ajusta para exibição vertical */
+    header > .h-cent {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    header > .h-cent.active {
+        display: block; /* Mostra o menu quando ativo via JS */
+    }
+
+    header > .h-cent > p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header > .h-cent > p > a {
+        font-size: 1.1em;
+        border-bottom: 1px solid var(--cor1);
+    }
+
+    nav.h-cent .btn-whatsapp {
+        text-align: center;
+        display: inline-block;
+        background-color: var(--cor1);
+        color: #ffffff !important;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 250px;
+        padding: 10px 0;
+        margin-top: 5px;
+    }
+
+    nav.h-cent .btn-whatsapp:hover {
+        background-color: var(--cor5);
+    }
+
+    /* SEÇÃO 2 - HERO DA PÁGINA */
+    .banner {
+        height: 40vh;
+    }
+
+    /* SEÇÃO 3 - QUEM SOMOS NÓS DA PÁGINA */
+    .somos-nos > .sn-grupo-1 {
+        flex-direction: column;
+    }
+
+    .somos-nos > .sn-grupo-1 > .sn-info {
+        margin-left: 0;
+    }
+
+    .somos-nos > .sn-grupo-1 > iframe {
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .somos-nos > .sn-grupo-2 {
+        flex-direction: column;
+    }
+
+    /* SEÇÃO 6 - AVALIAÇÕES DOS USUÁRIOS DA PÁGINA */
+    .avaliacoes > .ava-info > img {
+        max-width: 90%;
+        height: 200px;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    /* SEÇÃO 7 - CONTATO DA PÁGINA */
+    .contato > .cont-info > .cont-boxers {
+        flex-direction: column;
+    }
+
+    .contato > .cont-info > .cont-boxers > .cont-box {
+        width: 70%;
+    }
+
+    .contato > .cont-info > iframe {
+        margin-left: 0;
+        height: 300px;
+    }
 }
