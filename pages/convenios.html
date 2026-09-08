@@ -71,6 +71,20 @@
             <p><a href="">Consultar Meu Convênio</a></p>
         </section>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btnMenu = document.getElementById('btn-menu');
+            const navMenu = document.getElementById('nav-menu');
+
+            if (btnMenu && navMenu) {
+                btnMenu.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                });
+            } else {
+                console.error("Elemento #btn-menu ou #nav-menu não encontrado no HTML.");
+            }
+        });
+    </script>
 </body>
 <footer>
     <p>Site feito por <a href="https://instagram.com/misaelcunha.dev" target="_blank">Misael Cunha</a></p>
