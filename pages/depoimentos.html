@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/depoimentos.css">
+    <title>Sorriso Prime - Depoimentos</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="h-esq">
+            <p>
+                <img src="../img/logo.png" alt="Logo" class="logo"> Sorriso Prime
+            </p>
+        </div>
+
+        <span class="material-symbols-outlined" id="btn-menu">
+            menu
+        </span>
+
+        <nav class="h-cent" id="nav-menu">
+            <p>
+                <a href="../index.html" target="_self">Ínicio</a>
+                <a href="../pages/convenios.html" target="_self">Convênios</a>
+                <a href="../pages/depoimentos.html" target="_self">Depoimentos</a>
+                <a href="">Dúvidas Frequentes</a>
+
+                <a href="" class="btn-whatsapp">WHATSAPP</a>
+            </p>
+        </nav>
+
+        <div class="h-dir">
+            <a href="">WHATSAPP</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao depoimentos">
+            <h1>Veja os depoimentos da Sorrisso Prime</h1>
+            <p>Veja os depoimentos dos clientes da Sorriso Prime</p>
+
+            <div class="lista-depoimentos">
+                <div class="videos-depoimentos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1tjuhCdWPB4?si=pBf53dJ9ML_G5qKj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2>Juliana Mendes</h2>
+                    <p>"Experiência excelente do início ao fim."</p>
+                </div>
+
+                <div class="videos-depoimentos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WcaFKRPK0hs?si=IpEH-sJ63E8qrzYe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2>Ricardo Alencar</h2>
+                    <p>"Equipe nota 10, atendimento humanizado."</p>
+                </div>
+
+                <div class="videos-depoimentos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vgglnOokboo?si=BIwAHz5VhiN0KAx_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2>Beatris Vasconcelos</h2>
+                    <p>"Lugar incrível, super recomendo!"</p>
+                </div>
+
+                <div class="videos-depoimentos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/69yDjsVm9rM?si=Zwxg_xPWzb45uVEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2>Thiago Rocha</h2>
+                    <p>"Resolvi meu problema rapidamente."</p>
+                </div>
+
+                <div class="videos-depoimentos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bie1bafyTwA?si=WniEekighTiDSCck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2>Camila Ferreira</h2>
+                    <p>"Estrutura impecável e moderna."</p>
+                </div>
+
+                <div class="videos-depoimentos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LZ6vJ3eQMDg?si=k3z5cjjEkeQ3Tgv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2>Gustavo Martins</h2>
+                    <p>"Minha família toda se trata aqui."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btnMenu = document.getElementById('btn-menu');
+            const navMenu = document.getElementById('nav-menu');
+
+            if (btnMenu && navMenu) {
+                btnMenu.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                });
+            } else {
+                console.error("Elemento #btn-menu ou #nav-menu não encontrado no HTML.");
+            }
+        });
+    </script>
+</body>
+<footer>
+    <p>Site feito por <a href="https://instagram.com/misaelcunha.dev" target="_blank">Misael Cunha</a></p>
+</footer>
+</html>

@@ -107,78 +107,30 @@ nav.h-cent .btn-whatsapp {
     display: none;
 }
 
-/* SEÇÃO 2 - HERO DA PÁGINA */
-
-.banner {
-    background-image: url('../img/convenios/Banner.png');
-    background-position: bottom right -350px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 30vh;
-
-    padding-top: 7%;
-    padding-left: 5%;
-}
-
-.banner > .hero > p {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: var(--cor5);
-}
-
-.banner > .hero > h1 {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    max-width: 600px;
-    font-size: 2.2em;
-    color: var(--cor1);
-}
-
-.banner > .hero > a {
-    border-radius: 5px;
-    padding: 10px;
-
-    background-color: var(--cor1);
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.banner > .hero > a:hover {
-    background-color: var(--cor5);
-}
-
-/* SEÇÃO 3 - LISTA DA PÁGINA */
-.convenios {
+/* SEÇÃO 2 - DEPOIMENTOS DA PÁGINA */
+.depoimentos {
     padding-top: 30px;
+    padding-left: 30px;
     padding-bottom: 30px;
-    border-bottom: 2px solid var(--cor9);
+
+    background-color: #e7e7e7;
+
+    text-align: center;
 }
 
-.convenios > h2 {
-    text-align: center;
+.depoimentos > h1 {
     font-size: 2em;
     color: var(--cor1);
+
+    margin-bottom: 10px;
 }
 
-.convenios > p {
-    text-align: center;
+.depoimentos > p {
     font-size: 1.2em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.convenios > p > a {
-    margin-top: 30px;
-    border-radius: 5px;
-    padding: 10px;
-
-    background-color: var(--cor1);
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.convenios > .lista-conv {
+.depoimentos > .lista-depoimentos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,16 +139,32 @@ nav.h-cent .btn-whatsapp {
     gap: 30px;
 }
 
-.convenios > .lista-conv > img {
-    max-width: 200px;
-    max-height: 150px;
+.depoimentos > .lista-depoimentos > .videos-depoimentos {
+    background-color: #ffffff;
+    max-width: 350px;
+    height: 270px;
+}
+
+.depoimentos > .lista-depoimentos > .videos-depoimentos > iframe {
+    max-width: 350px;
+    max-height: 200px;
+}
+
+.depoimentos > .lista-depoimentos > .videos-depoimentos > h2 {
+    margin-top: 5px;
+    color: var(--cor1);
+    font-size: 1.3em;
+}
+
+.depoimentos > .lista-depoimentos > .videos-depoimentos > p {
+    font-size: 1.2em;
 }
 
 /* FOOTER DA PÁGINA */
 footer {
     padding: 3px 0;
     color: #ffffff;
-    background-color: var(--cor1);
+    background-color: var(--cor5);
 
     text-align: center;
 }
@@ -270,9 +238,7 @@ footer > p a:hover {
         background-color: var(--cor5);
     }
 
-    /* SEÇÃO 2 - HERO DA PÁGINA */
-    .banner {
-        height: 40vh;
+    .depoimentos > .lista-depoimentos {
+        flex-direction: column;
     }
-    
 }
