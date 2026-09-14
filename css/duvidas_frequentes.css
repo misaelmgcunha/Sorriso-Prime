@@ -1,0 +1,108 @@
+/* CONFIGURAÇÕES GERAIS */
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --fonte: 'Roboto';
+
+    --cor1: #2596BE;
+    --cor2: #24BF94;
+    --cor3: #BF9724;
+    --cor4: #BF7424;
+    --cor5: #385D6A;
+
+    --cor9: #757575;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte), Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+.secao {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Sombra única para todo o bloco */
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/* SEÇÃO 1 - HEADER DA PÁGINA */
+header {
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+header > .h-esq {
+    margin-left: 25px;
+}
+
+header > .h-esq > p {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+
+    color: var(--cor1);
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+header > .h-esq > p > img {
+    max-width: 70px;
+}
+
+
+header > .h-cent > p > a {
+    margin: 0 5px 0 5px;
+    color: var(--cor1);
+}
+
+header > .h-cent > p > a:hover {
+    font-weight: bold;
+    color: var(--cor2);
+    border-bottom: 3px solid var(--cor2);
+}
+
+header > .h-dir {
+    margin-right: 25px;
+}
+
+header > .h-dir > a {
+    border-radius: 5px;
+    padding: 10px;
+
+    background-color: var(--cor1);
+    color: #ffffff;
+    font-weight: bold;
+} 
+
+header > .h-dir > a:hover {
+    background-color: var(--cor5);
+}
+
+/* Esconde o ícone de hambúrguer por padrão em telas grandes */
+#btn-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--cor1);
+    margin-right: 25px;
+}
+
+nav.h-cent .btn-whatsapp {
+    display: none;
+}
